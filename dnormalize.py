@@ -16,7 +16,7 @@ def normalize(url = 'skills.csv',words_to_split= [], split_words = [],):
         if skill in words_to_split:
             skill = split_words.index(skill)
     result = {skill: skills.count(skill) for skill in skills if skills.count(skill) >= 1}
-    return
+    return result
 
 #зарплаты (пока не работает как надо)
 def normalize_slr(slr_url = 'salary-ranges.csv'):
